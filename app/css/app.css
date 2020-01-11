@@ -78,6 +78,7 @@ p {
 }
 
 .reset {
+  cursor: pointer;
   width: auto;
   margin-left: 16px;
   padding: 16px;
