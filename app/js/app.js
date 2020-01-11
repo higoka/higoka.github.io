@@ -58,6 +58,6 @@ const update = () => {
     for (const registration of registrations) {
       registration.update()
     }
-    return Promise.resolve()
-  }).then(window.location.reload(true))
+    window.location.reload(true)
+  })
 }
