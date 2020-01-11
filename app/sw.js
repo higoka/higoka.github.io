@@ -1,4 +1,4 @@
-const cacheName = 'v1.0.0'
+const cacheName = 'v1.1.0'
 const cacheFiles = [
   'https://higoka.github.io/app/',
   'https://higoka.github.io/app/manifest.json',
@@ -40,6 +40,6 @@ self.addEventListener('fetch', (e) => {
 
 self.addEventListener('message', (e) => {
   if (e.data.action === 'skipWaiting') {
-    self.skipWaiting().then(window.location.reload(true))
+    self.skipWaiting().then(location.reload(true))
   }
 })
