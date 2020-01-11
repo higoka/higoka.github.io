@@ -1,4 +1,4 @@
-const cacheName = 'v1.7.0'
+const cacheName = 'v1.2.0'
 const cacheFiles = [
   '/app/',
   '/app/favicon.ico',
