@@ -26,10 +26,10 @@ form.addEventListener('submit', (e) => {
     return
   }
 
-  const carb1 = `<li>${Math.floor((100 / form.carb.value) * 10)}g KH</li>`
+  const carb1 = `<li>${Math.floor((100 / form.carb.value) * 10)}g</li>`
   const fat1  = `<li>${Math.floor((100 / form.fat.value) * 10)}g Fett</li>`
 
-  const carb2 = `<li>${Math.floor((100 / form.carb.value) * form.amount.value * 10)}g KH</li>`
+  const carb2 = `<li>${Math.floor((100 / form.carb.value) * form.amount.value * 10)}g</li>`
   const fat2  = `<li>${Math.floor((100 / form.fat.value) * form.amount.value * 10)}g Fett</li>`
 
   const amount = `
