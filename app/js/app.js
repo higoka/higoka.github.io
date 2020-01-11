@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js')
+  navigator.serviceWorker.register('sw.js', { scope: '/app/' })
     .then((reg) => {
       reg.addEventListener('updatefound', () => {
         const worker = reg.installing
