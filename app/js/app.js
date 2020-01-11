@@ -16,6 +16,8 @@ if ('serviceWorker' in navigator) {
         })
       })
     })
+
+  navigator.serviceWorker.addEventListener('controllerchange', () => window.location.reload())
 }
 
 const result = document.querySelector('.result')
@@ -56,7 +58,5 @@ form.addEventListener('submit', (e) => {
 })
 
 const update = () => {
-  console.log(worker)
   worker.postMessage({ action: 'skipWaiting' })
-  // window.location.reload(true)
 }
