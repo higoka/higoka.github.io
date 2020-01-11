@@ -13,7 +13,7 @@ const cacheFiles = [
   // 'https://fonts.gstatic.com/s/quicksand/v19/6xKtdSZaM9iE8KbpRA_hJFQNYuDyP7bh.woff2',
 ]
 
-this.addEventListener('install', (e) => {
+self.addEventListener('install', (e) => {
   console.log('install')
   e.waitUntil(
     caches.open(cacheName)
@@ -21,7 +21,7 @@ this.addEventListener('install', (e) => {
   )
 })
 
-this.addEventListener('activate', (e) => {
+self.addEventListener('activate', (e) => {
   console.log('activate')
   e.waitUntil(
     caches.keys()
@@ -29,11 +29,17 @@ this.addEventListener('activate', (e) => {
   )
 })
 
-this.addEventListener('fetch', (e) => {
+self.addEventListener('fetch', (e) => {
   console.log('fetch')
   e.respondWith(
     caches.match(e.request).then((response) => {
       return response || fetch(e.request)
     })
   )
+})
+
+self.addEventListener('message', (e) => {
+  if (e.data.action === 'skipWaiting') {
+    self.skipWaiting()
+  }
 })

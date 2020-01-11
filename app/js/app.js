@@ -1,8 +1,10 @@
+let worker;
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js')
     .then((reg) => {
       reg.addEventListener('updatefound', () => {
-        const worker = reg.installing
+        worker = reg.installing
         worker.addEventListener('statechange', () => {
           switch (worker.state) {
             case 'installed':
@@ -54,10 +56,7 @@ form.addEventListener('submit', (e) => {
 })
 
 const update = () => {
-  navigator.serviceWorker.getRegistrations().then((registrations) => {
-    for (const registration of registrations) {
-      registration.update()
-    }
-    window.location.reload(true)
-  })
+  console.log(worker)
+  worker.postMessage({ action: 'skipWaiting' })
+  // window.location.reload(true)
 }
