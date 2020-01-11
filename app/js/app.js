@@ -17,7 +17,12 @@ if ('serviceWorker' in navigator) {
       })
     })
 
-  navigator.serviceWorker.addEventListener('controllerchange', () => window.location.reload())
+  let refresh = false
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (refresh) return
+    window.location.reload()
+    refresh = true
+  })
 }
 
 const result = document.querySelector('.result')
