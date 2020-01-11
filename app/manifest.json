@@ -1,0 +1,14 @@
+{
+  "name": "KH Rechner",
+  "short_name": "KH Rechner",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "https://higoka.github.io/app",
+  "icons": [{
+    "src": "img/icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "theme_color": "#2f3542",
+  "background_color": "#fff"
+}

@@ -1,0 +1,115 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Quicksand, sans-serif;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 32px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form div {
+  flex: calc(100% / 3 - 32px);
+  margin-left: 16px;
+}
+
+form div:first-child {
+  margin-left: 0;
+}
+
+label {
+  margin-bottom: 16px;
+  font-weight: 700;
+  display: block;
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #f1f2f6;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* input:focus {
+  border-color: #dfe4ea;
+} */
+
+button {
+  cursor: pointer;
+  margin-top: 16px;
+  color: #fff;
+  border-color: #2ed573;
+  background-color: #2ed573;
+}
+
+footer {
+  color: #ced6e0;
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+p {
+  margin: 0 0 16px 0;
+}
+
+.reset {
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+  margin: 16px 0;
+}
+
+.result {
+  display: flex;
+  margin-top: 16px;
+}
+
+.result div {
+  flex: 50%;
+}
+
+.result p {
+  font-weight: 700;
+}
+
+.result div:first-child {
+  margin-right: 16px;
+}
+
+.result ul {
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+}
+
+.popup {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 0.75rem;
+  width: 100%;
+  padding: 16px;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  background: #ff4757;
+  margin: 0;
+  display: none;
+  position: absolute;
+}
