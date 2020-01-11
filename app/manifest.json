@@ -3,7 +3,7 @@
   "short_name": "KH Rechner",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "https://higoka.github.io/app",
+  "start_url": "https://higoka.github.io/app/",
   "icons": [{
     "src": "img/icon.png",
     "sizes": "512x512",
