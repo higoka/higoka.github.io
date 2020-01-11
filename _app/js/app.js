@@ -50,15 +50,21 @@ form.addEventListener('submit', (e) => {
       </ul>
     </div>`
 
+  const left = `<p class="left">Übrig: ${Math.floor((form.carb.value / 100) * form.left.value)}g KH</p>`
+
   result.innerHTML = `
-    <div>
-      <p>1 Wert</p>
-      <ul>
-        ${form.carb.value ? carb1 : ''}
-        ${form.fat.value ? fat1 : ''}
-      </ul>
+    <h1>Resultat</h1>
+    <div class="result-group">
+      <div>
+        <p>1 Wert</p>
+        <ul>
+          ${form.carb.value ? carb1 : ''}
+          ${form.fat.value ? fat1 : ''}
+        </ul>
+      </div>
+      ${form.amount.value ? amount : ''}
     </div>
-    ${form.amount.value ? amount : ''}
+    ${form.left.value ? left : ''}
   `
 })
 
