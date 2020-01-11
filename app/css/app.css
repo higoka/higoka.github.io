@@ -127,7 +127,6 @@ p {
 .popup {
   cursor: pointer;
   text-align: center;
-  text-decoration: underline;
   font-size: 0.75rem;
   width: 100%;
   padding: 16px;
@@ -138,4 +137,11 @@ p {
   margin: 0;
   display: none;
   position: absolute;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+    margin: auto;
+  }
 }
