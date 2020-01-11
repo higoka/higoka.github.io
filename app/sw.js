@@ -33,7 +33,7 @@ this.addEventListener('fetch', (e) => {
   console.log('fetch')
   e.respondWith(
     caches.match(e.request).then((response) => {
-      return response || fetch(e.request)
+      return response || fetch(e.request).catch(console.log)
     })
   )
 })
