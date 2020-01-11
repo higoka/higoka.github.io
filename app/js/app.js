@@ -52,3 +52,11 @@ form.addEventListener('submit', (e) => {
     ${form.amount.value ? amount : ''}
   `
 })
+
+const update = () => {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    for (const registration of registrations) {
+      registration.update()
+    }
+  })
+}
