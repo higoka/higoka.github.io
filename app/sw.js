@@ -1,6 +1,7 @@
 const cacheName = 'v1.5.0'
 const cacheFiles = [
   '/app/',
+  '/app/favicon.ico',
   '/app/manifest.json',
   '/app/index.html',
   '/app/css/app.css',
