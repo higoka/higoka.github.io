@@ -1,11 +1,11 @@
 const cacheName = 'v1.0.0'
 const cacheFiles = [
-  '/',
-  '/manifest.json',
-  '/index.html',
-  '/css/app.css',
-  '/js/app.js',
-  '/img/icon.png',
+  '../',
+  '../manifest.json',
+  '../index.html',
+  '../css/app.css',
+  '../js/app.js',
+  '../img/icon.png',
   'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css',
   'https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap',
   'https://fonts.gstatic.com/s/quicksand/v19/6xKtdSZaM9iE8KbpRA_hK1QNYuDyPw.woff2',
@@ -33,7 +33,7 @@ this.addEventListener('fetch', (e) => {
   console.log('fetch')
   e.respondWith(
     caches.match(e.request).then((response) => {
-      return response || fetch(e.request).catch(console.log)
+      return response || fetch(e.request)
     })
   )
 })
