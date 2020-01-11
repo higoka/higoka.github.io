@@ -9,18 +9,11 @@ body {
   flex-direction: column;
   height: 100vh;
   padding: 32px;
-  background: #1e90ff;
-  color: #fff;
 }
 
 main {
   display: flex;
   flex-direction: column;
-}
-
-h1 {
-  font-size: 1.5rem;
-  margin: 0 0 32px 0;
 }
 
 form {
@@ -29,17 +22,12 @@ form {
 }
 
 form div {
-  flex: calc(100% / 4 - 32px);
+  flex: calc(100% / 3 - 32px);
   margin-left: 16px;
 }
 
 form div:first-child {
   margin-left: 0;
-}
-
-.group {
-  display: flex;
-  margin: 0;
 }
 
 label {
@@ -81,31 +69,23 @@ p {
 }
 
 .reset {
-  width: auto;
-  margin-left: 16px;
-  border-color: #ff4757;
-  background-color: #ff4757;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+  margin: 16px 0;
 }
 
 .result {
-  margin-top: 32px;
-}
-
-.result-group {
   display: flex;
+  margin-top: 16px;
 }
 
-.result-group div {
+.result div {
   flex: 50%;
 }
 
 .result p {
   font-weight: 700;
-  /* font-size: 1.2rem; */
-}
-
-.result p.left {
-  margin: 32px 0 0 0;
 }
 
 .result div:first-child {
