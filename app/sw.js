@@ -1,11 +1,11 @@
 const cacheName = 'v1.0.0'
 const cacheFiles = [
-  '/',
-  '../manifest.json',
-  '../index.html',
-  '../css/app.css',
-  '../js/app.js',
-  '../img/icon.png',
+  'https://higoka.github.io/app/',
+  'https://higoka.github.io/app/manifest.json',
+  'https://higoka.github.io/app/index.html',
+  'https://higoka.github.io/app/css/app.css',
+  'https://higoka.github.io/app/js/app.js',
+  'https://higoka.github.io/app/img/icon.png',
   'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css',
   'https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap',
   'https://fonts.gstatic.com/s/quicksand/v19/6xKtdSZaM9iE8KbpRA_hK1QNYuDyPw.woff2',
