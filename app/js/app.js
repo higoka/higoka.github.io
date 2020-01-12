@@ -45,9 +45,9 @@ form.addEventListener('submit', (e) => {
 
   const left = `
     <div>
-      <p>Übrig</p>
+      <p>Rest</p>
       <ul>
-        <li>${Math.floor((form.carb.value / 100) * form.left.value)}g KH</li>
+        <li>${Math.floor((form.carb.value / 100) * form.left.value)}g Kh</li>
       </ul>
     </div>`
 

@@ -1,6 +1,6 @@
 {
-  "name": "KH Rechner",
-  "short_name": "KH Rechner",
+  "name": "Kh Rechner",
+  "short_name": "Kh Rechner",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "/app/",
