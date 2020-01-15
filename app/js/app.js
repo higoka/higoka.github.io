@@ -23,17 +23,23 @@ if ('serviceWorker' in navigator) {
     window.location.reload()
     refresh = true
   })
+}
 
+document.querySelector('.test').addEventListener('click', () => {
   if ('Notification' in window) {
     Notification.requestPermission().then((result) => {
       if (result === 'granted') {
         new Notification('test', {
           body: 'das ist ein test',
         })
+      } else {
+        alert('Benachrichtigungen abgelehnt.')
       }
     })
+  } else {
+    alert('Benachrichtigungen werden nicht unterstützt.')
   }
-}
+})
 
 const result = document.querySelector('.result')
 const form = document.querySelector('form')
