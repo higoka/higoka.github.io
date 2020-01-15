@@ -108,7 +108,7 @@ p {
 }
 
 .result {
-  margin-top: 32px;
+  margin: 32px 0;
 }
 
 .result-group {
@@ -159,4 +159,19 @@ p {
     max-width: 768px;
     margin: auto;
   }
+}
+
+.new-design .result-group div {
+  background: rgba(0, 0, 0, 0.08);
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.new-design .result-group p {
+  margin: 0 0 8px 0;
+}
+
+.new-design .result-group div:not(:last-child) {
+  margin-right: 16px;
 }
