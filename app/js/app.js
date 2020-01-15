@@ -25,8 +25,12 @@ if ('serviceWorker' in navigator) {
   })
 
   if ('Notification' in window) {
-    new Notification('test', {
-      body: 'das ist ein test',
+    Notification.requestPermission().then((result) => {
+      if (result === 'granted') {
+        new Notification('test', {
+          body: 'das ist ein test',
+        })
+      }
     })
   }
 }
