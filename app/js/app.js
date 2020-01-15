@@ -23,6 +23,12 @@ if ('serviceWorker' in navigator) {
     window.location.reload()
     refresh = true
   })
+
+  if ('Notification' in window) {
+    new Notification('test', {
+      body: 'das ist ein test',
+    })
+  }
 }
 
 const result = document.querySelector('.result')
