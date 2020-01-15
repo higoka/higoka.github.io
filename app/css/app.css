@@ -154,13 +154,6 @@ p {
   position: absolute;
 }
 
-@media (min-width: 768px) {
-  body {
-    max-width: 768px;
-    margin: auto;
-  }
-}
-
 .new-design .result-group div {
   background: rgba(0, 0, 0, 0.08);
   border: none;
@@ -178,4 +171,21 @@ p {
 
 .new-design .result-group div:not(:last-child) {
   margin-right: 16px;
+}
+
+@media screen and (max-width: 375px) {
+  .new-design .result-group {
+    flex-direction: column;
+  }
+
+  .new-design .result-group div {
+    margin: 0 0 16px 0 !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 768px;
+    margin: auto;
+  }
 }
