@@ -172,6 +172,10 @@ p {
   margin: 0 0 8px 0;
 }
 
+.new-design .result-group ul {
+  list-style-type: none;
+}
+
 .new-design .result-group div:not(:last-child) {
   margin-right: 16px;
 }
