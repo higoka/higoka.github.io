@@ -1,0 +1,17 @@
+{
+  "name": "Cryptokurse Rechner",
+  "short_name": "Cryptokurse Rechner",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#3498db",
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "img/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
