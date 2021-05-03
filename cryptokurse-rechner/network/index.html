@@ -18,18 +18,18 @@
 
 		
 
-		<link rel="modulepreload" href="/././start-f83b4057.js">
-		<link rel="modulepreload" href="/././chunks/vendor-dfaef48c.js">
-		<link rel="modulepreload" href="/././pages/$layout.svelte-db804f96.js">
-		<link rel="modulepreload" href="/././pages/network.svelte-fde1ce48.js">
-		<link rel="stylesheet" href="/././assets/start-a8cd1609.css">
-		<link rel="stylesheet" href="/././assets/pages/$layout.svelte-c597a902.css">
+		<link rel="modulepreload" href="/cryptokurse-rechner/_app/start-f83b4057.js">
+		<link rel="modulepreload" href="/cryptokurse-rechner/_app/chunks/vendor-dfaef48c.js">
+		<link rel="modulepreload" href="/cryptokurse-rechner/_app/pages/$layout.svelte-db804f96.js">
+		<link rel="modulepreload" href="/cryptokurse-rechner/_app/pages/network.svelte-fde1ce48.js">
+		<link rel="stylesheet" href="/cryptokurse-rechner/_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/cryptokurse-rechner/_app/assets/pages/$layout.svelte-c597a902.css">
 
 		<script type="module">
-			import { start } from "/././start-f83b4057.js";
+			import { start } from "/cryptokurse-rechner/_app/start-f83b4057.js";
 			start({
 				target: document.querySelector("#svelte"),
-				paths: {"base":"","assets":"/."},
+				paths: {"base":"/cryptokurse-rechner","assets":"/cryptokurse-rechner"},
 				session: {},
 				host: location.host,
 				route: true,
@@ -38,8 +38,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/././pages/$layout.svelte-db804f96.js"),
-						import("/././pages/network.svelte-fde1ce48.js")
+						import("/cryptokurse-rechner/_app/pages/$layout.svelte-db804f96.js"),
+						import("/cryptokurse-rechner/_app/pages/network.svelte-fde1ce48.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
