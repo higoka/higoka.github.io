@@ -1,0 +1,11 @@
+{
+  "name": "pwa",
+  "short_name": "pwa",
+  "description": "fooooo",
+
+  "start_url": "/",
+  "theme_color": "red",
+  "background_color": "blue",
+  "orientation": "portrait",
+  "display": "standalone"
+}

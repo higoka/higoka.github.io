@@ -1,1 +1,0 @@
-import{C as e}from"./vendor-dfaef48c.js";const t=e(localStorage.getItem("BTC")||0),a=e(localStorage.getItem("ETH")||0),o=e(localStorage.getItem("SHIB")||0),g=e(localStorage.getItem("AKITA")||0),l=e(localStorage.getItem("USDT")||0),r=e(localStorage.getItem("XMR")||0);export{g as A,t as B,a as E,o as S,l as U,r as X};
