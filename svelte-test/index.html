@@ -8,17 +8,17 @@
 
 		
 
-		<link rel="modulepreload" href="/./_app/start-9ca5787a.js">
-		<link rel="modulepreload" href="/./_app/chunks/vendor-43cd886a.js">
-		<link rel="modulepreload" href="/./_app/layout.svelte-904f1151.js">
-		<link rel="modulepreload" href="/./_app/pages/index.svelte-ebbdb403.js">
-		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+		<link rel="modulepreload" href="/svelte-test/_app/start-9ca5787a.js">
+		<link rel="modulepreload" href="/svelte-test/_app/chunks/vendor-43cd886a.js">
+		<link rel="modulepreload" href="/svelte-test/_app/layout.svelte-904f1151.js">
+		<link rel="modulepreload" href="/svelte-test/_app/pages/index.svelte-ebbdb403.js">
+		<link rel="stylesheet" href="/svelte-test/_app/assets/start-a8cd1609.css">
 
 		<script type="module">
-			import { start } from "/./_app/start-9ca5787a.js";
+			import { start } from "/svelte-test/_app/start-9ca5787a.js";
 			start({
 				target: document.querySelector("#svelte"),
-				paths: {"base":"","assets":"/."},
+				paths: {"base":"/svelte-test","assets":"/svelte-test"},
 				session: {},
 				host: location.host,
 				route: true,
@@ -28,8 +28,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./_app/layout.svelte-904f1151.js"),
-						import("/./_app/pages/index.svelte-ebbdb403.js")
+						import("/svelte-test/_app/layout.svelte-904f1151.js"),
+						import("/svelte-test/_app/pages/index.svelte-ebbdb403.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
